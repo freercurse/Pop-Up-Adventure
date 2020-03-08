@@ -109,6 +109,33 @@ namespace Pop_Up_Adventure
         
         static void ProgramStart()
         {
+            var art = new[]
+                {
+                @"               .        ___---___                    .                 " ,
+                @"      .              .--\        --.     .     .         ." ,
+                @"                  ./.;_.\     __/~ \.     " ,
+                @"                 /;  / `-'  __\    . \                         " ,
+                @".       .       / ,--'     / .   .;   \        |" ,
+                @"               | .|       /       __   |      -O-       ." ,
+                @"               |__/    __ |  . ;   \ | . |      |" ,
+                @"               |      /  \\_    . ;| \___|    " ,
+                @"  .    o       |      \  .~\\___,--'     |           ." ,
+                @"               |     | . ; ~~~~\_    __|" ,
+                @"  |             \    \   .  .  ; \  /_/   ." ,
+                @" -O-        .    \   /         . |  ~/                  ." ,
+                @"  |    .          ~\ \   .      /  /~          o" ,
+                @" .                   ~--___ ; ___--~       " ,
+                @" .          -- -         .            " ,
+                @"               GAIA               ENGINE ",
+                };
+
+            Console.WindowWidth = 160;
+            Console.WriteLine("\n\n");
+            foreach (string line in art)
+            {
+                Console.WriteLine(line);
+            }
+            Console.ReadKey();
 
         }
 
