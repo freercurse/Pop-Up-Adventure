@@ -101,6 +101,7 @@ namespace Pop_Up_Adventure
             Console.Clear();
             Console.Write("User Profile Accepted");
             Thread.Sleep(1000);
+            Console.Clear();
             Console.Write("Loading LEGACY Console Interface");
             Thinking();
             ProgramStart();
