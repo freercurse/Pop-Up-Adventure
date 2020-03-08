@@ -5,9 +5,9 @@ namespace Pop_Up_Adventure
 {
     class Program
     {
-        string Name;
-        string sex;
-        string age;
+        static string Name;
+        static string Sex;
+        static string Age;
         static void Main(string[] args)
         {
             Console.Write("Loading Gaia Engine");
@@ -17,7 +17,7 @@ namespace Pop_Up_Adventure
             GameBegin();
         }
 
-        private static void GameBegin()
+        static void GameBegin()
         {
             Console.Write("Login Using Stored Credentials?");
             Console.WriteLine("");
@@ -48,7 +48,7 @@ namespace Pop_Up_Adventure
             Introduction();
         }
 
-        private static void Introduction()
+        static void Introduction()
         {
             Console.Write("INTRODUCTION required!");
             ThinkingShort();
@@ -64,7 +64,40 @@ namespace Pop_Up_Adventure
             Console.WriteLine("");
             Console.WriteLine("Begin Diagnostics?");
             Console.ReadLine();
-
+            Console.Clear();
+            Console.Write("Intiating Diagnostics");
+            Thinking();
+            Console.Clear();
+            Console.Write("ACCESS DENIED !! ACCESS DENIED !!");
+            Thread.Sleep(2000);
+            Console.Clear();
+            Console.Write("Reverting to LEGACY Console interface");
+            Thinking();
+            Console.Clear();
+            Console.WriteLine("Enter First Name");
+            Name = Console.ReadLine().ToString();
+            Console.WriteLine();
+            Console.Write("Saving");
+            Thinking();           
+            Console.WriteLine("Accepted");
+            Thread.Sleep(1500);
+            Console.Clear();
+            Console.WriteLine("Enter Age");
+            Age = Console.ReadLine().ToString();
+            Console.WriteLine();
+            Console.Write("Saving");
+            Thinking();
+            Console.WriteLine("Accepted");
+            Thread.Sleep(1500);
+            Console.Clear();
+            Console.WriteLine("Enter Sex");
+            Sex = Console.ReadLine().ToString();
+            Console.WriteLine();
+            Console.Write("Saving");
+            Thinking();
+            Console.WriteLine("Accepted");
+            Thread.Sleep(1500);
+            Console.Clear();
         }
 
         static void Thinking()
