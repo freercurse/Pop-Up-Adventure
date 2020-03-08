@@ -71,7 +71,10 @@ namespace Pop_Up_Adventure
             Thread.Sleep(2000);
             Console.Clear();
             Console.Write("Reverting to LEGACY Console interface");
-            Thinking();           
+            Thinking();
+            Console.Write("INTRODUCTION required!");
+            ThinkingShort();
+            Console.Clear();
             Console.WriteLine("Enter First Name");
             Name = Console.ReadLine().ToString();
             Console.WriteLine();
@@ -96,6 +99,16 @@ namespace Pop_Up_Adventure
             Console.WriteLine("Accepted");
             Thread.Sleep(1500);
             Console.Clear();
+            Console.Write("User Profile Accepted");
+            Thread.Sleep(1000);
+            Console.Write("Loading LEGACY Console Interface");
+            Thinking();
+            ProgramStart();
+        }
+        
+        static void ProgramStart()
+        {
+
         }
 
         static void Thinking()
