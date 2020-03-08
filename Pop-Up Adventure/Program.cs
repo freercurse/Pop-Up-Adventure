@@ -36,9 +36,9 @@ namespace Pop_Up_Adventure
             }
             else
             { 
-                Console.Write("Thinking!");
+                Console.Write("Calculating");
                 Thinking();
-                Console.WriteLine(" OK, ByeBye then!");
+                Console.WriteLine(" ShutDown Initiated.");
                 Thread.Sleep(3000);
                 return;
             }      
@@ -59,7 +59,7 @@ namespace Pop_Up_Adventure
             Console.Write("ERROR ERROR!");
             Thread.Sleep(3000);
             Console.Clear();
-            Console.Write("Low Power Detected");
+            Console.Write("Low Power!");
             Thinking();
             Console.WriteLine("");
             Console.WriteLine("Begin Diagnostics?");
