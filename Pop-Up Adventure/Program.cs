@@ -54,31 +54,29 @@ namespace Pop_Up_Adventure
             ThinkingShort();
             Console.Clear();
             Console.Write("Loading GUI Introduction Interface");
-            Thinking();
+            ThinkingShort();
             Thread.Sleep(2000);
             Console.Write("ERROR ERROR!");
             Thread.Sleep(3000);
             Console.Clear();
             Console.Write("Low Power!");
-            Thinking();
+            ThinkingShort();
             Console.WriteLine("");
             Console.WriteLine("Begin Diagnostics?");
             Console.ReadLine();
             Console.Clear();
             Console.Write("Intiating Diagnostics");
-            Thinking();
-            Console.Clear();
+            Thinking();           
             Console.Write("ACCESS DENIED !! ACCESS DENIED !!");
             Thread.Sleep(2000);
             Console.Clear();
             Console.Write("Reverting to LEGACY Console interface");
-            Thinking();
-            Console.Clear();
+            Thinking();           
             Console.WriteLine("Enter First Name");
             Name = Console.ReadLine().ToString();
             Console.WriteLine();
             Console.Write("Saving");
-            Thinking();           
+            ThinkingShort();           
             Console.WriteLine("Accepted");
             Thread.Sleep(1500);
             Console.Clear();
@@ -86,7 +84,7 @@ namespace Pop_Up_Adventure
             Age = Console.ReadLine().ToString();
             Console.WriteLine();
             Console.Write("Saving");
-            Thinking();
+            ThinkingShort();
             Console.WriteLine("Accepted");
             Thread.Sleep(1500);
             Console.Clear();
@@ -94,7 +92,7 @@ namespace Pop_Up_Adventure
             Sex = Console.ReadLine().ToString();
             Console.WriteLine();
             Console.Write("Saving");
-            Thinking();
+            ThinkingShort();
             Console.WriteLine("Accepted");
             Thread.Sleep(1500);
             Console.Clear();
@@ -111,6 +109,7 @@ namespace Pop_Up_Adventure
             Thread.Sleep(500);
             Console.Write(".");
             Thread.Sleep(1000);
+            Console.Clear();
         }
         static void ThinkingShort()
         {
